@@ -1,0 +1,45 @@
+name: administracion_electoral
+description: >-
+  Aplicación de escritorio (Windows) para la administración electoral:
+  institución, períodos, cursos, padrón, listas, dispositivos, sincronización,
+  resultados y archivo anual.
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.13.2
+  flutter: ">=3.47.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # Capa de UI del template Kite (vendorizada, MIT). Editable como código propio.
+  kite_ui:
+    path: ../../packages/kite_ui
+
+  # Código compartido con la app de votación.
+  electoral_core:
+    path: ../../packages/electoral_core
+
+  # Navegación y estado (mismo stack que Kite).
+  go_router: ^18.0.0
+  flutter_riverpod: ^3.0.0
+
+  intl: any
+  supabase_flutter: ^2.18.3
+
+  # Exportación de resultados y del acta (PDF/Excel) con diálogo de guardado.
+  pdf: ^3.12.0
+  excel: ^4.0.6
+  file_selector: ^1.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true

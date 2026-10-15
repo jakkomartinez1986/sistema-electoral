@@ -1,0 +1,51 @@
+name: votacion_estudiantil
+description: >-
+  Aplicación de votación estudiantil para tablets Android y escritorio Windows,
+  con funcionamiento offline-first dentro de los límites documentados.
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.13.2
+  flutter: ">=3.47.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # Capa de UI del template Kite (vendorizada, MIT).
+  kite_ui:
+    path: ../../packages/kite_ui
+
+  # Código compartido con la app de administración.
+  electoral_core:
+    path: ../../packages/electoral_core
+
+  go_router: ^18.0.0
+  flutter_riverpod: ^3.0.0
+
+  intl: any
+  supabase_flutter: ^2.18.3
+  shared_preferences: ^2.3.0
+
+  # Almacenamiento local offline-first (drift / SQLite).
+  drift: ^2.20.0
+  sqlite3_flutter_libs: ^0.5.24
+  path_provider: ^2.1.4
+  path: ^1.9.0
+
+  # Verificadores del padrón (deben coincidir con el servidor) e idempotencia.
+  crypto: ^3.0.3
+  uuid: ^4.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  drift_dev: ^2.20.0
+  build_runner: ^2.4.12
+
+flutter:
+  uses-material-design: true

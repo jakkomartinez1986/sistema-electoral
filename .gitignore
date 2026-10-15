@@ -1,0 +1,49 @@
+# ---- Flutter / Dart ----
+**/build/
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/.packages
+**/pubspec.lock
+**/generated_plugin_registrant.dart
+
+# Flutter-generated localizations / codegen
+**/lib/**/*.g.dart
+**/lib/**/*.freezed.dart
+**/l10n/generated/
+
+# ---- Entornos y secretos (NUNCA subir credenciales) ----
+.env
+.env.*
+!.env.example
+**/dart_defines.json
+!**/dart_defines.example.json
+**/signing_keys.json
+**/service-account*.json
+
+# ---- Supabase ----
+supabase/.branches/
+supabase/.temp/
+supabase/.env
+supabase/functions/**/node_modules/
+
+# ---- Node (usado solo por herramientas puntuales) ----
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# ---- IDE / sistema ----
+.idea/
+.vscode/*
+!.vscode/settings.json
+*.iml
+*.swp
+.DS_Store
+Thumbs.db
+
+# ---- Salidas de compilación de instaladores ----
+dist/
+release/
+*.msix
+*.apk
+*.aab

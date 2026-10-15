@@ -1,0 +1,20 @@
+name: electoral_core
+description: >-
+  Código compartido del Sistema Electoral Estudiantil: modelos, validaciones,
+  constantes, formatos y protocolo de sincronización. Dart puro (sin Flutter)
+  para poder usarse desde la app de administración (Windows) y la de votación
+  (Android y Windows).
+version: 0.1.0
+publish_to: none
+
+environment:
+  sdk: ^3.13.0
+
+dependencies:
+  crypto: ^3.0.3
+  intl: ">=0.19.0 <0.21.0"
+  uuid: ^4.0.0
+
+dev_dependencies:
+  lints: ^5.0.0
+  test: ^1.25.0
